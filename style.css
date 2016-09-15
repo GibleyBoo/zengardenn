@@ -16,34 +16,40 @@ html {
 body { 
 	font: 75% "Comic Sans MS", "Comic Sans";
 	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(https://67.media.tumblr.com/4ce18f245088e7d0bb14dfb77a42dcee/tumblr_nkc9ziP7rV1sgw7hlo1_500.gif) no-repeat bottom right; 
+	color: #CF000F; 
+	background: #1D43C0 url(https://67.media.tumblr.com/4ce18f245088e7d0bb14dfb77a42dcee/tumblr_nkc9ziP7rV1sgw7hlo1_500.gif) no-repeat bottom right; 
 	margin: 0; 
 	padding: 0;
 	}
 p { 
 	margin-top: 0; 
 	text-align: justify;
+	background-color: #1D43C0;
+	color: #CF000F;
 	}
 h3 { 
 	font: italic normal 1.4em "Comic Sans MS", "Comic Sans";
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
-	color: #7D775C;
+	background-color: #1D43C0;
+	color: #CF000F;
 	}
 a:link { 
 	font-weight: bold; 
 	text-decoration: dotted; 
-	color: #B7A5DF;
+	background-color: #1D43C0;
+	color: #CF000F;
 	}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: dotted; 
-	color: #D4CDDC;
+	background-color: #1D43C0;
+	color: #CF000F;
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
+	background-color: #1D43C0;
+	color: #CF000F;
 	}
 abbr {
 	border-bottom: none;
