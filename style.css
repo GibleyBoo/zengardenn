@@ -14,7 +14,7 @@ html {
 	padding: 0;
 	}
 body { 
-	font: 75% georgia, sans-serif;
+	font: 75% "Comic Sans MS", "Comic Sans";
 	line-height: 1.88889;
 	color: #555753; 
 	background: #fff url(https://67.media.tumblr.com/4ce18f245088e7d0bb14dfb77a42dcee/tumblr_nkc9ziP7rV1sgw7hlo1_500.gif) no-repeat bottom right; 
@@ -26,19 +26,19 @@ p {
 	text-align: justify;
 	}
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
+	font: italic normal 1.4em "Comic Sans MS", "Comic Sans";
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #7D775C;
 	}
 a:link { 
 	font-weight: bold; 
-	text-decoration: none; 
+	text-decoration: dotted; 
 	color: #B7A5DF;
 	}
 a:visited { 
 	font-weight: bold; 
-	text-decoration: none; 
+	text-decoration: dotted; 
 	color: #D4CDDC;
 	}
 a:hover, a:focus, a:active { 
