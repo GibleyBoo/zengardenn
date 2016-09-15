@@ -9,6 +9,10 @@
 
 
 /* basic elements */
+html, body
+{
+	cursor: none !important;
+}
 html {
 	margin: 0;
 	padding: 0;
