@@ -59,14 +59,14 @@ abbr {
 /* specific divs */
 .page-wrapper { 
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
 
 .intro { 
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
@@ -80,7 +80,7 @@ abbr {
 	}
 
 header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+	background: transparent url(http://csszengarden.com/001/h1.gif);
 	margin-top: 10px;
 	display: block;
 	width: 219px;
@@ -137,31 +137,31 @@ footer a:link, footer a:visited {
 
 .sidebar {
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 1.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
 .sidebar .wrapper { 
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
 .sidebar h3.select { 
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 2.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
 .sidebar h3.archives { 
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
 .sidebar h3.resources { 
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 3.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
@@ -169,13 +169,13 @@ footer a:link, footer a:visited {
 
 .sidebar ul {
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 4s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
 .sidebar li {
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 4.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
@@ -189,7 +189,7 @@ footer a:link, footer a:visited {
 
 .extra1 {
 	animation-name: spin;
-	animation-duration: 0.5s;
+	animation-duration: 5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	}
