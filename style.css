@@ -17,7 +17,7 @@ body {
 	font: 75% "Comic Sans MS", "Comic Sans";
 	line-height: 1.88889;
 	color: #CF000F; 
-	background: #1D43C0 url(https://67.media.tumblr.com/4ce18f245088e7d0bb14dfb77a42dcee/tumblr_nkc9ziP7rV1sgw7hlo1_500.gif); 
+	background: #1D43C0 url(https://67.media.tumblr.com/4ce18f245088e7d0bb14dfb77a42dcee/tumblr_nkc9ziP7rV1sgw7hlo1_500.gif);
 	margin: 0; 
 	padding: 0;
 	}
@@ -58,15 +58,25 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
 
 .intro { 
-	min-width: 470px;
-	width: 100%;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+
+	@keyframes spin {
+		from {
+			transform: rotateZ(0deg);
+		} to {
+			transform: rotateZ(360deg);
+		}
 	}
 
 header h1 { 
@@ -126,61 +136,48 @@ footer a:link, footer a:visited {
 	}
 
 .sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
 .sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
 .sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
 .sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
 .sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
 
 
 .sidebar ul {
-	margin: 0;
-	padding: 0;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
 .sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
 .sidebar li a:link {
 	color: #988F5E;
@@ -191,10 +188,8 @@ footer a:link, footer a:visited {
 
 
 .extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 	}
