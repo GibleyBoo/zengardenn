@@ -1,199 +1,282 @@
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
 /* This file based on 'Tranquille' by Dave Shea */
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
 /* basic elements */
-html, body
-{
-	cursor: none !important;
+html,body {
+    cursor: none;
 }
+
+
+
 html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% "Comic Sans MS", "Comic Sans";
-	line-height: 1.88889;
-	color: #CF000F; 
-	background: #1D43C0 url(https://67.media.tumblr.com/4ce18f245088e7d0bb14dfb77a42dcee/tumblr_nkc9ziP7rV1sgw7hlo1_500.gif);
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	background-color: #1D43C0;
-	color: #CF000F;
-	}
-h3 { 
-	font: italic normal 1.4em "Comic Sans MS", "Comic Sans";
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	background-color: #1D43C0;
-	color: #CF000F;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: dotted; 
-	background-color: #1D43C0;
-	color: #CF000F;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: dotted; 
-	background-color: #1D43C0;
-	color: #CF000F;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	background-color: #1D43C0;
-	color: #CF000F;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-
-/* specific divs */
-.page-wrapper { 
-	animation-name: spin;
-	animation-duration: 5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	}
-
-.intro { 
-	animation-name: spin;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	}
-
-	@keyframes spin {
-		from {
-			transform: rotateZ(0deg);
-		} to {
-			transform: rotateZ(360deg);
-		}
-	}
-
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif);
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
+    margin: 0;
+    padding: 0;
 }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
+body {
+    font: 100% "Comic Sans MS","Comic Sans";
+    line-height: 1.88889;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    animation: edgy 11s infinite;
+    animation: cool 11s infinite;
+}
+
+@keyframes edgy {
+    0% {
+        color: #ee82ee;
+    }
+
+    10% {
+        color: #AA1839;
+    }
+
+    20% {
+        color: #FF0000;
+    }
+
+    30% {
+        color: #F70;
+    }
+    
+    40% {
+        color: #FFED00;
+    }
+
+    50% {
+        color: #FF9E00;
+    }
+
+    60% {
+        color: #ff0;
+    }
+
+    70% {
+        color: #80D100;
+    }
+
+    80% {
+        color: #00B500;
+    }
+
+    90% {
+        color: #007E56;
+    }
+
+    100% {
+        color: #0047ab;
+    }
+
+    110% {
+        color: #552F72;
+    }
+}
+
+@keyframes cool {
+    0% {
+        background-color: #FFED00;
+    }
+
+    10% {
+        background-color: #80D100;
+    }
+
+    20% {
+        background-color: #00B500;
+    }
+
+    30% {
+        background-color: #007E56;
+    }
+
+    40% {
+        background-color: #0047ab;
+    }
+
+    50% {
+        background-color: #552F72;
+    }
+
+    60% {
+        background-color: #ee82ee;
+    }
+
+    70% {
+        background-color: #AA1839;
+    }
+
+    80% {
+        background-color: #FF0000;
+    }
+
+    90% {
+        background-color: #F70;
+    }
+
+    100% {
+        background-color: #FFED00;
+    }
+
+    110% {
+        background-color: #FF9E00;
+    }
+}
+
+@keyframes epil {
+	33% {
+		color: red;
 	}
 
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
+	66% {
+		color: green;
 	}
 
-footer { 
-	text-align: center; 
+	99% {
+		color: blue;
 	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
+}
+
+@keyframes edgyshit {
+	0% {
+		text-shadow: 2px 2px red;
 	}
 
-.sidebar {
-	animation-name: spin;
-	animation-duration: 1.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	}
-.sidebar .wrapper { 
-	animation-name: spin;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	}
-.sidebar h3.select { 
-	animation-name: spin;
-	animation-duration: 2.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	}
-.sidebar h3.archives { 
-	animation-name: spin;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	}
-.sidebar h3.resources { 
-	animation-name: spin;
-	animation-duration: 3.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+	25% {
+		text-shadow: -2px 2px green;
 	}
 
-
-.sidebar ul {
-	animation-name: spin;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	}
-.sidebar li {
-	animation-name: spin;
-	animation-duration: 4.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
+	50% {
+		text-shadow: -2px -2px yellow;
 	}
 
-
-.extra1 {
-	animation-name: spin;
-	animation-duration: 5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+	75% {
+		text-shadow: 2px -2px blue;
 	}
+
+	100% {
+		text-shadow: 2px 2px violet;
+	}
+}
+
+@keyframes cancerli {
+	0% {
+		letter-spacing: 0px;
+	}
+
+	25% {
+		letter-spacing: 25px;
+	}
+
+	50% {
+		letter-spacing: 50px;
+	}
+
+	75% {
+		letter-spacing: 75px;
+	}
+
+	100% {
+		letter-spacing: 100px;
+	}
+}
+
+@keyframes shak {
+    0% {
+        transform: translate(2px,1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px,-2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px,0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(0px,2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px,-1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px,2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px,1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(2px,1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px,-1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(2px,2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px,-2px) rotate(-1deg);
+    }
+}
+
+p {
+    margin-top: 0;
+    text-align: justify;
+    text-shadow: 2px 2px blue;
+    animation: edgy 11s infinite;
+}
+
+h1 {
+	font: italic normal 1.4em "Comic Sans MS","Comic Sans";
+	font-style: capitalize;    
+    letter-spacing: 100px;
+    margin-bottom: 0;
+    animation: edgy 11s infinite;
+}
+
+h2 {
+	font: italic normal 1.4em "Comic Sans MS","Comic Sans";
+    letter-spacing: 100px;
+    margin-bottom: 0;
+    animation: edgy 11s infinite;
+}
+
+h3 {
+    font: italic normal 1.4em "Comic Sans MS","Comic Sans";
+    margin-bottom: 0;
+    animation: edgy 11s infinite;
+}
+
+abbr {
+    border-bottom: none;
+}
+
+ul {
+	animation: cancerli 1s infinite;
+	animation-direction: alternate-reverse;
+}
+
+li {
+	animation: cancerli 1s infinite;
+}
+
+a {
+	animation: edgyshit .1s infinite;
+}
+
+a:hover {
+	animation: epil 1s;
+}
