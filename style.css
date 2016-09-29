@@ -5,27 +5,54 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
-html,body {
-    cursor: none;
-}
-
-
-
 html {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font: 100% "Comic Sans MS","Comic Sans";
+    font: 100% "Comic sans MS","Comic Sans";
     line-height: 1.88889;
     margin: 0;
     padding: 0;
+    animation: canceril 5s infinite;
+}
+
+.intro {
+	position: relative;
+	background-image: url(zengardenjustriight.png);
 }
 
 .page-wrapper {
+    margin-top: -21px;
+    display: block;
+    animation: edgy 11s infinite,cool 11s infinite,smutsigt 50s infinite;
+}
+
+.supporting {
     animation: edgy 11s infinite;
-    animation: cool 11s infinite;
+}
+
+@keyframes smutsigt {
+    0% {
+        background-image: url(smuts0.png);
+    }
+
+    25% {
+        background-image: url(smuts.png);
+    }
+
+    50% {
+        background-image: url(smuts1.png);
+    }
+
+    75% {
+        background-image: url(smuts2.png);
+    }
+
+    100% {
+        background-image: url(smuts3.png);
+    }
 }
 
 @keyframes edgy {
@@ -38,13 +65,13 @@ body {
     }
 
     20% {
-        color: #FF0000;
+        color: red;
     }
 
     30% {
         color: #F70;
     }
-    
+
     40% {
         color: #FFED00;
     }
@@ -112,7 +139,7 @@ body {
     }
 
     80% {
-        background-color: #FF0000;
+        background-color: red;
     }
 
     90% {
@@ -129,61 +156,153 @@ body {
 }
 
 @keyframes epil {
-	33% {
-		color: red;
-	}
+    33% {
+        color: red;
+    }
 
-	66% {
-		color: green;
-	}
+    66% {
+        color: green;
+    }
 
-	99% {
-		color: blue;
-	}
+    99% {
+        color: blue;
+    }
 }
 
 @keyframes edgyshit {
-	0% {
-		text-shadow: 2px 2px red;
-	}
+    0% {
+        text-shadow: 2px 2px red;
+    }
 
-	25% {
-		text-shadow: -2px 2px green;
-	}
+    25% {
+        text-shadow: -2px 2px green;
+    }
 
-	50% {
-		text-shadow: -2px -2px yellow;
-	}
+    50% {
+        text-shadow: -2px -2px #ff0;
+    }
 
-	75% {
-		text-shadow: 2px -2px blue;
-	}
+    75% {
+        text-shadow: 2px -2px blue;
+    }
 
-	100% {
-		text-shadow: 2px 2px violet;
-	}
+    100% {
+        text-shadow: 2px 2px #ee82ee;
+    }
+}
+
+@keyframes canceril {
+    0% {
+        cursor: auto;
+    }
+
+    20% {
+        cursor: none;
+    }
+
+    40% {
+        cursor: auto;
+    }
+
+    60% {
+        cursor: none;
+    }
+
+    80% {
+        cursor: auto;
+    }
+
+    100% {
+        cursor: none;
+    }
+}
+
+@keyframes cancerul {
+    0% {
+        zoom: 25%;
+    }
+
+    25% {
+        zoom: 75%;
+    }
+
+    50% {
+        zoom: 125%;
+    }
+
+    75% {
+        zoom: 175%;
+    }
+
+    100% {
+        zoom: 225%;
+    }
+}
+
+@keyframes cancerui {
+    0% {
+        letter-spacing: 0;
+    }
+
+    25% {
+        letter-spacing: 25px;
+    }
+
+    50% {
+        letter-spacing: 50px;
+    }
+
+    75% {
+        letter-spacing: 75px;
+    }
+
+    100% {
+        letter-spacing: 100px;
+    }
 }
 
 @keyframes cancerli {
-	0% {
-		letter-spacing: 0px;
-	}
+    0% {
+        font-family: helvetica;
+    }
 
-	25% {
-		letter-spacing: 25px;
-	}
+    25% {
+        font-family: Comic sans;
+    }
 
-	50% {
-		letter-spacing: 50px;
-	}
+    50% {
+        font-family: sans-serif;
+    }
 
-	75% {
-		letter-spacing: 75px;
-	}
+    75% {
+        font-family: lucida;
+    }
 
-	100% {
-		letter-spacing: 100px;
-	}
+    100% {
+        font-family: impact;
+    }
+}
+
+@keyframes rock {
+    0% {
+        transform: rotate(-7deg);
+    }
+
+    25% {
+        transform: rotate(7deg);
+    }
+
+    50% {
+        transform: rotate(-7deg);
+    }
+
+    75% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+        transform: rotate(-7deg);
+    }
 }
 
 @keyframes shak {
@@ -232,51 +351,168 @@ body {
     }
 }
 
+@keyframes spacedout {
+    0%,90% {
+        zoom: 110%;
+    }
+
+    10%,80% {
+        zoom: 120%;
+    }
+
+    20%,70% {
+        zoom: 130%;
+    }
+
+    30%,60% {
+        zoom: 140%;
+    }
+
+    40%,50% {
+        zoom: 150%;
+    }
+}
+
+@keyframes adjusted {
+    0%,100% {
+        letter-spacing: 0px;
+    }
+
+    5%,95% {
+        letter-spacing: 5px;
+    }
+
+    10%,90% {
+        letter-spacing: 10px;
+    }
+
+    15%,85% {
+        letter-spacing: 15px;
+    }
+
+    20%,80% {
+        letter-spacing: 20px;
+    }
+
+    25%,65% {
+        letter-spacing: 25px;
+    }
+
+    30%,60% {
+        letter-spacing: 30px;
+    }
+
+    35%,65% {
+        letter-spacing: 35px;
+    }
+
+    40%,60% {
+        letter-spacing: 40px;
+    }
+
+    45%,55% {
+        letter-spacing: 45px;
+    }
+
+    50%  {
+    	letter-spacing: 50px;
+    }
+}
+
+@keyframes expand {
+    0%,100% {
+        line-height: 150%;
+    }
+
+    5%,95% {
+        line-height: 165%;
+    }
+
+    10%,90% {
+        line-height: 180%;
+    }
+
+    15%,85% {
+        line-height: 195%;
+    }
+
+    20%,80% {
+        line-height: 210%;
+    }
+
+    25%,75% {
+        line-height: 225%;
+    }
+
+    30%,70% {
+        line-height: 240%;
+    }
+
+    35%,65% {
+        line-height: 255%;
+    }
+
+    40%,60% {
+        line-height: 270%;
+    }
+
+    45%,55% {
+        line-height: 285%;
+    }
+
+    50% {
+        line-height: 300%;
+    }
+}
+
 p {
     margin-top: 0;
     text-align: justify;
     text-shadow: 2px 2px blue;
-    animation: edgy 11s infinite;
+    animation: edgy 11s infinite, expand 250s infinite;
+}
+
+header {
+    margin-top: 0;
+    text-shadow: 3px 3px 5px #000;
 }
 
 h1 {
-	font: italic normal 1.4em "Comic Sans MS","Comic Sans";
-	font-style: capitalize;    
+    font: italic normal 1.4em "Comic Sans MS","Comic Sans";
+    font-style: capitalize;
     letter-spacing: 100px;
     margin-bottom: 0;
     animation: edgy 11s infinite;
+    text-shadow: 3px 3px 5px #000;
 }
 
 h2 {
-	font: italic normal 1.4em "Comic Sans MS","Comic Sans";
+    font: italic normal 1.4em "Comic Sans MS","Comic Sans";
     letter-spacing: 100px;
     margin-bottom: 0;
     animation: edgy 11s infinite;
+    color: transparent;
+    text-shadow: 3px 3px 5px #000;
 }
 
 h3 {
     font: italic normal 1.4em "Comic Sans MS","Comic Sans";
+    letter-spacing: 100px;
     margin-bottom: 0;
     animation: edgy 11s infinite;
+    color: transparent;
+    text-shadow: 3px 3px 5px #000;
 }
 
 abbr {
     border-bottom: none;
 }
 
-ul {
-	animation: cancerli 1s infinite;
-	animation-direction: alternate-reverse;
-}
-
-li {
-	animation: cancerli 1s infinite;
-}
-
 a {
-	animation: edgyshit .1s infinite;
+    zoom: 200%;
+    animation: edgyshit .1s infinite,shak .8s infinite,rock 50s infinite alternate;
 }
 
 a:hover {
-	animation: epil 1s;
+    animation: epil 1s infinite, shak 10s infinite, spacedout 10s infinite;
 }
